@@ -20,7 +20,7 @@ def guessing_game()
 
 		if guess == num then
 			puts "YOU WIN the number was #{num}"
-			puts "would you like to play again/nyes o"
+			puts "would you like to play again\n(yes or no) "
 
 			if gets.chomp == "yes" then
 				guessing_game()
@@ -31,8 +31,8 @@ def guessing_game()
 		end
 	end
 
-	puts "sorry you lose the number was #{num}"
-	puts "would you like to play again \n(yes or no) "
+	puts "Sorry you lose the number was #{num}"
+	puts "Would you like to play again.\n(yes or no) "
 
 	if gets.chomp == "yes" then
 		guessing_game()
